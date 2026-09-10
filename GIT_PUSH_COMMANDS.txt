@@ -1,0 +1,48 @@
+============================================
+GIT PUSH COMMANDS - Copy and Run These
+============================================
+
+Open terminal in the real-estate-crm folder and run these commands one by one:
+
+1. Add all files to Git:
+   git add .
+
+2. Create first commit:
+   git commit -m "Initial commit: Real Estate CRM with Brevo email and MongoDB Atlas"
+
+3. Rename branch to main (if needed):
+   git branch -M main
+
+4. Add GitHub remote:
+   git remote add origin https://github.com/rupeshmutkule/real-estate.git
+
+5. Push to GitHub:
+   git push -u origin main
+
+============================================
+IMPORTANT: Before Pushing
+============================================
+
+Your .env file with credentials will NOT be pushed (it's in .gitignore)
+This is good for security!
+
+The following are protected:
+- server/.env (contains MongoDB password, Brevo API key)
+- node_modules/ folders
+- uploads/ folder
+
+============================================
+After Pushing
+============================================
+
+Your repository will be available at:
+https://github.com/rupeshmutkule/real-estate
+
+To clone on another machine:
+1. git clone https://github.com/rupeshmutkule/real-estate.git
+2. cd real-estate/server && npm install
+3. cd ../client && npm install
+4. Create server/.env file with your credentials
+5. Start the application
+
+============================================
